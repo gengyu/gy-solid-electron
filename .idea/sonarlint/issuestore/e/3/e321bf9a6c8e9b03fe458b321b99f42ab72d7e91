@@ -1,0 +1,8 @@
+
+Dtypescript:S1128"(Remove this unused import of 'mapArray'.( î ›
+Utypescript:S1854"9Remove this useless assignment to variable "setPathlike".(ä¿Óë
+Ztypescript:S1854"7Remove this useless assignment to variable "structure".(ì«µç8ÿşüÑ¶0
+]typescript:S1854":Remove this useless assignment to variable "setStructure".(ì«µç8ÿşüÑ¶0
+wtypescript:S2201"UConsider using "forEach" instead of "map" as its return value is not being used here.(øş08ÿşüÑ¶0
+8typescript:S108"Empty block statement.(—’ò8ÿşüÑ¶0
+?typescript:S1252"Remove this commented out code.(…¦›çûÿÿÿÿ
