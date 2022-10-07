@@ -2,7 +2,7 @@ import { Menu, app, BrowserWindow, ipcMain } from 'electron';
 export const MenuInit = (mainWindow:BrowserWindow | null )=>{
     const menu = Menu.buildFromTemplate([
         {
-            label: app.name,
+            label: '&Ffff' + app.name,
             submenu: [
                 {
                     click: () => {
@@ -11,7 +11,14 @@ export const MenuInit = (mainWindow:BrowserWindow | null )=>{
                         // })
                         mainWindow?.webContents.send('update-counter', 1)
                     },
-                    label: 'Increment',
+
+                    label: '&Incrementcc',
+                    role: 'zoomIn',
+                    // submenu: [
+                    //     {
+                    //         label: 'dd',
+                    //     }
+                    // ]
                 },
                 {
                     click: () => mainWindow?.webContents.send('update-counter', -1),
@@ -20,6 +27,11 @@ export const MenuInit = (mainWindow:BrowserWindow | null )=>{
             ]
         }
     ])
+    setTimeout(()=>{
+        console.log(222)
+        Menu.sendActionToFirstResponder('zoomIn')
+    }, 1000)
+
     Menu.setApplicationMenu(menu)
 }
 

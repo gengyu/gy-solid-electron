@@ -9,9 +9,9 @@ export function initMessageChannels(mainWindow: BrowserWindow){
     mainWindow.on('ready-to-show', ()=>{
         console.log('ready-to-show')
         mainWindow.webContents.postMessage('port', null, [port1]);
-        setTimeout(()=>{
+        // setTimeout(()=>{
             port2.postMessage('-___________');
-        },3000)
+        // },3000)
     })
 }
 

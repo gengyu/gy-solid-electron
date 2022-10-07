@@ -16,7 +16,7 @@ fSWatcher.on('change', (params)=>{
 
 
 export function intFsWatchr(mainWindow:BrowserWindow ){
-    setInterval(()=>{
+    // setInterval(()=>{
         mainWindow.webContents.send('update-counter-1',100)
-    }, 800)
+    // }, 800)
 }
